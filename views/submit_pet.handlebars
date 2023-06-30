@@ -1,0 +1,164 @@
+<div class=" mb-4 project" id="blogbox">
+    <div>
+        <img src="assets/submit_pet_form.png" alt="Submit Pet">
+    </div>
+    <section class="section ">
+        <p>Thank you for choosing to submit a pet for adoption on our portal. Please provide the following information about the pet. All fields marked with an asterisk (*) are required.</p>
+        
+        <div class="container card formbgc p-6 user-form">
+            <form class="form submitForm">
+
+            <div class="columns">
+
+                <!-- FIRST COLUMN -->
+                <div class="column is-half">
+
+                    <!-- Pet name -->
+                    <div class="field ">
+                        <label class="label ">Pet name</label>
+                        <div class="control">
+                            <input class="input pet-name" type="text" placeholder="Write pet name">
+                        </div>
+                    </div>
+                    <!-- Pet type dropdown -->
+                    <div class="field">
+                        <label class="label">Pet type</label>
+                        <div class="control">
+                            <div class="select">
+                                <select class="pet-type">
+                                    <!-- Populate options dynamically using homeRoutes -->
+                                    <option>Select Any</option>
+                                    <option>Dog</option>
+                                    <option>Cat</option>
+                                    <!-- Add options fetched from the backend here -->
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Gender dropdown -->
+                    <div class="field">
+                        <label class="label">Gender</label>
+                        <div class="control">
+                            <div class="select">
+                                <select class="pet-gender">
+                                    <!-- Populate options dynamically using homeRoutes-->
+                                    <option>Select Any</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                    <!-- Add options fetched from the backend here -->
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Agency dropdown -->
+                    <div class="field">
+                        <label class="label">Agency</label>
+                        <div class="control">
+                            <div class="select">
+                                <select class="agency-id">
+                                    <!-- Populate options dynamically using homeRoutes-->
+                                    <option>Select Any</option>
+                                    <option>Paw Patrol</option>
+                                    <option>Kittens-n-Kisses</option>
+                                    <option>Happy Tails</option>
+                                    <option>Little Cute Heroes</option>
+                                    <option>Soft fur</option>
+                                    <!-- Add options fetched from the backend here -->
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <!-- Photo -->
+                    <div class="file">
+                    <label class="file-label">
+                        <input class="file-input pet-photo" type="file" name="resume">
+                        <span class="file-cta">
+                        <span class="file-icon">
+                            <i class="fas fa-upload"></i>
+                        </span>
+                        <span class="file-label">
+                            Choose a pet photo...
+                        </span>
+                        </span>
+                    </label>
+                    </div>
+
+                </div>
+
+
+                <!-- SECOND COLUMN -->
+                <div class="column is-half">
+
+                    <!-- Breed dropdown -->
+                    <div class="field">
+                        <label class="label">Breed</label>
+                        <div class="control">
+                            <input class="input pet-breed" type="text" placeholder="Write a breed">
+                        </div>
+                    </div>
+                    <!-- Age range dropdown -->
+                    <div class="field">
+                        <label class="label">Age range</label>
+                        <div class="control">
+                            <div class="select">
+                                <select class="pet-age-range">
+                                    <!-- Populate options dynamically using homeRoutes-->
+                                    <option>Select Any</option>
+                                    <option>Puppy</option>
+                                    <option>Adult</option>
+                                    <option>Senior</option>
+                                    <!-- Add options fetched from the backend here -->
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Description -->
+                    <div class="field">
+                        <label class="label">Description</label>
+                        <div class="control">
+                            <div class="control">
+                                <textarea class="textarea description" placeholder="Description"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- State dropdown -->
+                    <div class="field">
+                        <label class="label">State</label>
+                        <div class="control">
+                            <div class="select">
+                                <select class="location">
+                                    <!-- Populate options dynamically using homeRoutes-->
+                                    <option>Select Any</option>
+                                    <option>Texas</option>
+                                    <option>Colorado</option>
+                                    <option>New York</option>
+                                    <option>Vermont</option>
+                                    <option>Florida</option>
+                                    <!-- Add options fetched from the backend here -->
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <!-- Submit button we need to add an event listener and run a query search -->
+            <div class="field is-grouped is-justify-content-flex-end">
+                <div class="control">
+                    <button type="submit" class="button custom-box-sl submit-button">Submit</button>
+                </div>
+            </div>
+            </form>
+
+        </div>
+
+        <br>
+        <p>By submitting this form, I confirm that the information provided is true and accurate to the best of my knowledge. I understand that the pet will be reviewed and considered for adoption through our portal, and the final decision is subject to approval by our team.</p>
+        
+    </section>
+</div>
+<script src="./js/submitpet.js"></script>

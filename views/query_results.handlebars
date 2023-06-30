@@ -1,0 +1,43 @@
+<div id="blogbox">
+    <p class="is-size-4 is-size-6-mobile has-text-centered" >
+        <b class="is-size-4 is-size-5-mobile">Pawsome Connection Results: Find Your Soul Companion with Paws</b>
+    </p>
+    <br>
+    <br>
+    <div class="columns mb-4 project">
+        <div class="columns is-multiline">
+        {{#each pets as |pet|}}
+        <div class="column is-half">
+        <div class="card querycard has-text-centered">
+            <div class="card-content">
+            <div class="card has-background-white">
+                <img src="{{pet.pet_photo}}" alt="{{pet.pet_name}}">
+            </div>
+            <br>
+            <div class="card formbgc">
+                <p class="info-item">{{pet.pet_gender}}</p>
+                <p class="info-item">{{pet.pet_age_range}}</p>
+                <p class="info-item">{{pet.pet_breed}}</p>
+                <p class="info-item">@{{pet.agency.location}}</p>
+                <p class="info-item">by: {{pet.agency.name}}</p>
+            </div>
+            <br>
+            <div class="card formbgc">
+                <p class="info-item bigger-font">{{pet.pet_name}}</p>
+                <p class="info-item bigger-font">{{pet.description}}</p>
+            </div>
+            <br>
+            <div class="button-container ">
+                
+                <img src="assets/favorite_icon.png" alt="Favorite Icon" class="favorite-icon" data-petid="{{pet.id}}" >
+                <img src="assets/favorite_icon2.png" alt="Favorite Icon 2" class="favorite-icon2 hidden" data-petid="{{pet.id}}" >
+                <img src="assets/adopt_icon.png" alt="Adopt Icon" class="adopt-icon" data-petid="{{pet.id}}" >
+            </div>
+            </div>
+        </div>
+        </div>
+        {{/each}}
+    </div>
+    </div>
+</div>
+<script src="/js/favorites.js"></script>
